@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+const API_P =
+  "https://api.themoviedb.org/3/movie/550?api_key=98b67f15f209293466b881f4d7e03690";
 
 function Home() {
   const [list, setList] = useState(["Deependra", "Bharti", "Avatar", "Random"]);
@@ -27,6 +29,15 @@ function Home() {
     console.log("edit");
   };
 
+  const fetchData = async () => {
+    let res = await fetch(API_P);
+    let resp = await res.json();
+    console.log(resp);
+  };
+
+  useEffect(() => {
+    fetchData();
+  });
   return (
     <div>
       <ul>
