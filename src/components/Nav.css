@@ -1,0 +1,9 @@
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+}
+.nav img {
+  width: 120px;
+}

@@ -7,10 +7,12 @@ import Home from "./components/Home/Home";
 import Row from "./components/Row";
 import requests from "./requests";
 import Banner from "./components/Banner";
+import Nav from "./components/Nav";
 
 function App() {
   return (
     <div className="App">
+      <Nav />
       {/* <Router>
         <Routes>
           <Route path="/" Component={Home} />
