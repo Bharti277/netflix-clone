@@ -3,7 +3,12 @@
   top: 0;
   width: 100%;
   background-color: transparent;
+  transition: all 0.5s;
+  transition-timing-function: ease-in;
 }
 .nav img {
   width: 120px;
+}
+.nav__black {
+  background-color: #111;
 }
